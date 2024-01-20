@@ -1,0 +1,17 @@
+{
+  "name": "tuto-filter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch  --style=compressed ./sass/main.scss:dist/css/main.css",
+    "prefix": "postcss ./dist/css/main.css --use autoprefixer -d ./dist/css/prefixed/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.17",
+    "sass": "^1.70.0"
+  }
+}
