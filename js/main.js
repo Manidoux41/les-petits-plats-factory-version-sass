@@ -1,7 +1,8 @@
 import { listOfCard } from "./pages/listOfCard.js";
 
 async function init() {
-    await listOfCard(); 
+    const card = await listOfCard(); 
+    return card;
 }
 
 window.addEventListener('load', () => {
