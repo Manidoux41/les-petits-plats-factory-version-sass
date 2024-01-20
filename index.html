@@ -5,12 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Les Petits plats est un site de recherche de recettes du monde">
     <title>Les Petits plats</title>
+    <!-- Preload the LCP image with a high fetchpriority so it starts loading with the stylesheet. -->
+    <link rel="preload" fetchpriority="high" as="image" href="./assets/banner-image.webp" type="image/webp">
     <link rel="stylesheet" href="dist/css/main.css" type="text/css" media="all" fetchpriority="high">
 </head>
 <body>
     <div id="app">
         <header>
-            
+            <img src="assets/banner-image.webp" alt="banner" class="banner-image">
+            <img src="assets/logo.svg" alt="logo" class="logo">
+            <div id="search-recipes">
+                <h1>Chercher parmi plus de 1500 recettes du quotidien, simples et délicieuses</h1>
+                <div class="searchbar">
+                    <input type="text" placeholder="Rechercher une recette" class="search-input" aria-label="Rechercher">
+                    <button class="search-button">Rechercher</button>
+                </div>
+            </div>
             <h1>Recettes</h1>
         </header>
         <main>
